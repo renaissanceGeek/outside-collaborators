@@ -1,0 +1,4 @@
+qb-dev-materials:
+  good:
+    type: "group"
+    permissions: "write"
