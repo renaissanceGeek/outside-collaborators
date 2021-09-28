@@ -1,4 +1,0 @@
-study-fw-toolchain:
-  ami-iit/model-based-design:
-    type: "group"
-    permissions: "read"

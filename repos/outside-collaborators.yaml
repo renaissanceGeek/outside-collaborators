@@ -1,0 +1,4 @@
+temporary-external:
+  broken:
+    type: "group"
+    permissions: "write"
