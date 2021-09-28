@@ -1,4 +1,4 @@
-temporary-external:
+outside-collaborators:
   broken:
     type: "group"
     permissions: "write"

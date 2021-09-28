@@ -25,7 +25,12 @@ def get_entries(dirname)
     if files then
         files.each { |file|
             if !file.empty? then
-                entries.merge!(YAML.load_file(file))
+                begin
+                    entries.merge!(YAML.load_file(file))
+                rescue StandardError => e
+                    puts "#{file} - problem detected: #{e.inspect}❌"
+                end
+                    
             end
         }
     end
