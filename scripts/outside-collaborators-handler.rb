@@ -159,7 +159,7 @@ repos.each { |repo_name, repo_metadata|
                                 ok = add_repo_collaborator(repo_full_name, subuser, permissions)
                                 puts "- add_repo_collaborator for #{repo_full_name} = #{subuser} returned #{ok}"
                                 if !ok then
-                                    has_errors = false
+                                    has_errors = true
                                 end
                             end
                         }
