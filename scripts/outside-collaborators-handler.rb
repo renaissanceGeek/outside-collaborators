@@ -157,6 +157,7 @@ repos.each { |repo_name, repo_metadata|
                                 puts "- Detected group user \"#{subuser}\" handled individually"
                             else
                                 ok = add_repo_collaborator(repo_full_name, subuser, permissions)
+                                puts "- add_repo_collaborator for #{repo_full_name} = #{subuser} returned #{ok}"
                                 if !ok then
                                     has_errors = false
                                 end
